@@ -1,12 +1,44 @@
-<!DOCTYPE HTML>
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="en">
 
-<video width="320" height="240" controls="controls">
-  <source src="movie.ogg" type="video/ogg">
-  <source src="movie.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<input type="button" name="555" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/div.css">
+</head>
+
+<body style="background-image: url(http://d.hiphotos.baidu.com/image/pic/item/6159252dd42a2834171827b357b5c9ea14cebfcf.jpg)">
+  <h1 style="text-align: center">测试</h1>
+  <!-- div 样式居中 -->
+  <div id="div1" style="text-align: center">
+    <!-- 创建4个button 分别添加事件 -->
+    <button class="bt" onclick="playPause()">播放/暂停</button>
+    <button class="bt" onclick="makeBig()">大</button>
+    <button class="bt" onclick="makeNormal()">中</button>
+    <button class="bt" onclick="makeSmall()">小</button>
+    <!-- 换行 -->
+    <br>
+    <!--Video标签 宽度420px 上外边距15px 有控制栏-->
+    <video id="video1" width="420" style="margin-top: 15px" controls="controls">
+      <!--添加视频文件路径 类型为mp4-->
+      <source src="video/【iamcrc】欧文最犀利过人集锦NBA大学等.mp4" type="video/mp4">
+      <!--如果不支持HTML5标签给出提示-->
+      your browser does not support HTML5 video
+    </video>
+  </div>
+  <div id="div2" style="text-align: center">
+    <video width="320" height="240" controls="controls">
+      <source src="video/【iamcrc】欧文最犀利过人集锦NBA大学等.mp4" type="video/mp4">
+    </video>
+  </div>
+  <br>
+  <div id="div3" style="text-align: center">
+    <audio src="song/song.ogg" controls="controls"></audio>
+    <!--引入外部JS文件-->
+    <script src="js/video.js"></script>
+  </div>
 </body>
+
 </html>
