@@ -1,0 +1,85 @@
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: darkorange;
+	background-image: url(../img/bg1.jpg);
+}
+
+/*框架*/
+
+#cal {
+	/*margin-top: 30px;*/
+	margin: 100px auto;
+	width: 350px;
+	background-color: rgb(179, 220, 92);
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px rgb(44, 122, 3);
+}
+
+/*按钮单元格*/
+
+#bnts td {
+	width: 80px;
+	height: 45px;
+	padding: 5px;
+}
+
+/*按钮样式*/
+
+#bnts input {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: 500;
+	outline: none;
+	cursor: pointer;
+	/*background-color: ;*/
+}
+
+/*输入框样式*/
+
+.input {
+	width: 328px;
+	height: 80px;
+	text-align: right;
+	font-family: "微软雅黑";
+	font-size: 36px;
+	margin: 10px;
+	border-radius: 8px;
+	background-color: rgb(250, 257, 207);
+	outline: none;
+}
+
+/*特殊按钮的颜色*/
+
+.inputColor_orangered {
+	background-color: orangered;
+}
+
+.inputColor_black {
+	background-color: #454545;
+	color: white;
+}
+
+.inputColor_gray {
+	background-color: gray;
+}
